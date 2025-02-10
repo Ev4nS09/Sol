@@ -8,8 +8,6 @@ while [ -L "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symli
 done
 DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 
-java -classpath $DIR/out/:$DIR/antlr-4.13.1-complete.jar Compiler.solCompiler $1 $2
-
-
+java -classpath $DIR/../out/:$DIR/../antlr-4.13.1-complete.jar Compiler.solCompiler $1 $2
 
 
