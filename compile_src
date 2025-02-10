@@ -1,0 +1,5 @@
+#!/bin/bash
+
+DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+javac -d $DIR/out/ -classpath $DIR/antlr-4.13.1-complete.jar $DIR/src/*/*.java 

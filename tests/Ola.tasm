@@ -1,0 +1,5 @@
+L0: call L2
+L1: halt
+L2: sconst "Ola!"
+L3: sprint
+L4: ret 0
